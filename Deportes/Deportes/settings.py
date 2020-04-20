@@ -39,6 +39,18 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Estadio',
     'Inicio',
+    'Equipo',
+    'Evento',
+    'Jugador',
+    'Partido',
+    'Empresa',
+    'PersonaNatural',
+    'Arbitro',
+    'Ciudad',
+    'Alineacion',
+    'JugadorTemporada',
+    'DetallePartido',
+    'DetalleEvento',
 ]
 
 MIDDLEWARE = [

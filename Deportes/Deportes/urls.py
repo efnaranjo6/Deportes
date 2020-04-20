@@ -21,4 +21,17 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include(('Inicio.urls','Inicio'),namespace='Inicio')),
     path('Estadios/',include(('Estadio.urls','Estadio'),namespace='Estadio')),
+    path('Arbitro/',include(('Arbitro.urls','Arbitro'),namespace='Arbitro')),
+    path('Ciudad/',include(('Ciudad.urls','Ciudad'),namespace='Ciudad')),
+    path('DetallesE/',include(('DetalleEvento.urls','DetalleEvento'),namespace='DetalleEvento')),
+    path('DetallesP/',include(('DetallePartido.urls','DetallePartido'),namespace='DetallePartido')),
+    path('Equipo/',include(('Equipo.urls','Equipo'),namespace='Equipo')),
+    path('Estadio/',include(('Estadio.urls','Estadio'),namespace='Estadio')),
+    path('Empresa/',include(('Empresa.urls','Empresa'),namespace='Empresa')),
+    path('Evento/',include(('Evento.urls','Evento'),namespace='Evento')),
+    path('Jugador/',include(('Jugador.urls','Jugador'),namespace='Jugador')),
+    path('JugadorT/',include(('JugadorTemporada.urls','JugadorTemporada'),namespace='JugadorTemporada')),
+    path('Partido/',include(('Partido.urls','Partido'),namespace='Partido')),
+    path('PersonaN/',include(('PersonaNatural.urls','PersonaNatural'),namespace='PersonaNatural')),
+
 ]
