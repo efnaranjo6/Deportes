@@ -1,4 +1,4 @@
-{% extends 'container/container.html' %}
+{% extends 'container.html' %}
 {% block contenido %}
 <form method="post">
   <div class="panel panel-default">
@@ -12,7 +12,7 @@
       <button type="submit" class="btn btn-danger">
         <span class="fa fa-delete">Eliminar</span>
       </button
-        <a href="{% url 'Batalla:Batallas' %}" class="btn btn-succes">
+        <a href="{% url 'Evento:Eventos' %}" class="btn btn-succes">
           <span class="fa fa-undo"></span>
         </a>
     </div>

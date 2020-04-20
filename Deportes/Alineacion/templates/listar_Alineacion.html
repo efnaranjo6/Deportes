@@ -1,0 +1,68 @@
+{% extends 'container.html' %}
+{% block contenido %}
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <a class="btn btn-outline-primary float-right" href="{% url 'Alineacion:Isertar' %}">Agregar</a>
+      <h1>
+        Estadio
+      </h1>
+
+    </div>
+</div>
+<div class="panel-body">
+  <div class="table-stats order-table ov-h">
+      <table class="table ">
+          <thead>
+              <tr>
+                  <th class="serial">ID</th>
+                    <th>Nombre</th>
+                  <th>Capacidad</th>
+                  <th>Año de constrccion</th>
+                  <th>Acciones</th>
+              </tr>
+          </thead>
+          {% csrf_token %}
+          <tbody>
+              {% for item in Alineacion  %}
+              <tr>
+                  <td class="serial"> {{item.id}}</td>
+
+                  <td> <span class="name">{{item. min_ingreso}}</span> </td>
+                  <td>  <span class="count">{{item.min_salida}}</span> </td>
+                  <td> <span class="product">{{item.Equipo}}</span> </td>
+                  <td> <span class="product">{{item.JugadorTemporada}}</span> </td>
+                  <td>
+                    <div class=" btn-group  dropright pr-3" style="margin-right:20%">
+                       <button class="btn btn-danger dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Acciones
+                       </button>
+                       <div class="dropdown-menu p-3" aria-labelledby="dropdownMenuButton">
+                         <a  class="btn btn-outline-danger btn-block " href="{% url 'Alineacion:Eliminar' item.id  %}">eliminar</a>
+                         <a class="btn btn-outline-info  btn-block mt-2 " href="{% url 'Alineacion:Editar' item.id  %}">Editar</a>
+                       </div>
+                     </div>
+                 </td>
+              </tr>
+                {% endfor %}
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+          </tbody>
+      </table>
+  </div> <!-- /.table-stats -->
+</div>
+
+
+{%endblock contenido%}
