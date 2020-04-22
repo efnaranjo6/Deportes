@@ -3,7 +3,7 @@ from Equipo.models import Equipo
 class Equipoform(forms.ModelForm):
     class Meta:
         model = Equipo
-        fields = ['nombre','ano_creacion','Empresa','PersonaNatural','Ciudad']
+        fields = ['nombre','ano_creacion','Empresa','Ciudad']
         labels = {'nombre ': 'ingrese el  nombre ',
                   'ano_creacion': 'ingrese el ano_creacion',
                   'Empresa ': 'ingrese la Empresa',
@@ -12,7 +12,7 @@ class Equipoform(forms.ModelForm):
         widget={'nombre' : forms.TextInput(),
                 'ano_creacion' : forms.TextInput(),
                 'Empresa' : forms.TextInput(),
-                'PersonaNatural' : forms.TextInput(),
+
                 'Ciudad' : forms.TextInput()
                  }
     def __init__(self,*args, **kwargs):

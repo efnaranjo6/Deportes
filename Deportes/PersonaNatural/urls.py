@@ -1,10 +1,10 @@
 from django.urls import path,include
-from PesonaNatural.views import PesonaNaturalinsertar,PesonaNaturaleditar,PesonaNaturaleliminar,PesonaNaturalview
+from PersonaNatural.views import PersonaNaturalinsertar,PersonaNaturaleditar,PersonaNaturaleliminar,PersonaNaturalview
 
 urlpatterns = [
-path('', PesonaNaturalview.as_view(), name='PesonaNaturales'),
-path('PesonaNatural/new', PesonaNaturalinsertar.as_view(), name='Isertar'),
-path('PesonaNatural/Editar/<int:pk>', PesonaNaturaleditar.as_view(), name='Editar'),
-path('PesonaNatural/eliminar/<int:pk>', PesonaNaturaleliminar.as_view(), name='Eliminar'),
+path('', PersonaNaturalview.as_view(), name='PesonaNaturales'),
+path('PesonaNatural/new', PersonaNaturalinsertar.as_view(), name='Isertar'),
+path('PesonaNatural/Editar/<int:pk>', PersonaNaturaleditar.as_view(), name='Editar'),
+path('PesonaNatural/eliminar/<int:pk>', PersonaNaturaleliminar.as_view(), name='Eliminar'),
 
 ]

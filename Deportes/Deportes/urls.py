@@ -21,6 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include(('Inicio.urls','Inicio'),namespace='Inicio')),
     path('Estadios/',include(('Estadio.urls','Estadio'),namespace='Estadio')),
+     path('Alineacion/',include(('Alineacion.urls','Alineacion'),namespace='Alineacion')),
     path('Arbitro/',include(('Arbitro.urls','Arbitro'),namespace='Arbitro')),
     path('Ciudad/',include(('Ciudad.urls','Ciudad'),namespace='Ciudad')),
     path('DetallesE/',include(('DetalleEvento.urls','DetalleEvento'),namespace='DetalleE')),
