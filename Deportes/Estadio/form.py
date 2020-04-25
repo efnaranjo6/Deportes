@@ -17,7 +17,7 @@ class Estadioform(forms.ModelForm):
         super().__init__(*args, **kwargs)
         for field in iter(self.fields):
             if(field == 'ano_construccion'):
-                print("perro")
+
                 self.fields[field].widget.attrs.update({'id':'datepicker'})
             self.fields[field].widget.attrs.update({
                 'class':'form-control'})

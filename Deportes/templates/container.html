@@ -102,14 +102,18 @@
                       <ul class="sub-menu children dropdown-menu">
                           <li><i class="menu-icon fa fa-th-list"></i><a href="{% url 'Estadio:Estadios' %}">Estadio</a></li>
                           <li><i class="menu-icon fa ti-pin"></i><a href="{% url 'Alineacion:Alineaciones' %}">Alineacion</a></li>
-                          <li><i class="menu-icon fa fa-legal"></i><a href="{% url 'Estadio:Estadios' %}">Arbitro</a></li>
-                          <li><i class="menu-icon fa fa-building-o"></i><a href="{% url 'Estadio:Estadios' %}">Empresa</a></li>
-                          <li><i class="menu-icon fa fa-clipboard"></i><a href="{% url 'Estadio:Estadios' %}">Jugador</a></li>
-                          <li><i class="menu-icon fa ti-cup"></i><a href="{% url 'Estadio:Estadios' %}">Partido</a></li>
-                          <li><i class="menu-icon fa ti-user"></i><a href="{% url 'Estadio:Estadios' %}">Personas </a></li>
+                          <li><i class="menu-icon fa fa-legal"></i><a href="{% url 'Arbitro:Arbitros' %}">Arbitro</a></li>
+                          <li><i class="menu-icon fa fa-building-o"></i><a href="{% url 'Ciudad:Ciudades' %}">Ciudad</a></li>
+                          <li><i class="menu-icon fa fa-clipboard"></i><a href="{% url 'Empresa:Empresas' %}">Empresa</a></li>
+                          <li><i class="menu-icon fa ti-cup"></i><a href="{% url 'Jugador:Jugadores' %}">Jugador</a></li>
+                          <li><i class="menu-icon fa ti-user"></i><a href="{% url 'PersonaN:PersonaNaturales' %}">Personas </a></li>
+                            <li><i class="menu-icon fa ti-user"></i><a href="{% url 'Equipo:Equipos' %}">Equipos </a></li>
 
                       </ul>
                   </li>
+                   <li class="menu-item-has-children dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon ti-dribbble"></i>Partidos</a>
+                   </li>
               </ul>
           </div><!-- /.navbar-collapse -->
       </nav>

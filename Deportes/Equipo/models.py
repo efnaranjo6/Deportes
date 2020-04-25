@@ -7,7 +7,6 @@ class Equipo(models.Model):
     nombre = models.CharField(max_length=200)
     ano_creacion = models.DateField()
     Empresa=models.OneToOneField(Empresa, on_delete=models.CASCADE)
-
     Ciudad=models.ForeignKey(Ciudad, on_delete=models.CASCADE)
     def __str__(self):
         return '{}'.format(self.nombre)

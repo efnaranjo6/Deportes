@@ -3,14 +3,13 @@ from Arbitro.models import Arbitro
 class Arbitroform(forms.ModelForm):
     class Meta:
         model = Arbitro
-        fields = ['certificado','nombre']
-        labels = {'certificado ': 'ingrese el  nombre del estadion',
-                  'nombre': 'ingrese la capacidad de asistentes',
+        fields = ['certificado','nombreA']
+        labels = {'certificado ': 'ingrese el  certificado',
+                  'nombreA': 'ingrese El nombre',
 
                  }
         widget={'certificado' : forms.TextInput(),
-                'nombre' : forms.TextInput(),
-
+                'nombrea' : forms.TextInput(),
                 }
 
     def __init__(self,*args, **kwargs):

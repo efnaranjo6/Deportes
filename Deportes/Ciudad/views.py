@@ -17,17 +17,17 @@ class Ciudadinsertar(generic.CreateView):
      context_object_name = 'Ciudad'
      template_name = 'form_Ciudad.html'
      form_class = Ciudadform
-     success_url=reverse_lazy("Ciudad:Ciudads")
+     success_url=reverse_lazy("Ciudad:Ciudades")
 class Ciudadeditar(generic.UpdateView):
      model = Ciudad
      context_object_name = 'Ciudad'
      template_name = 'form_Ciudad.html'
      form_class = Ciudadform
-     success_url=reverse_lazy("Ciudad:Ciudads")
+     success_url=reverse_lazy("Ciudad:Ciudades")
 class Ciudadeliminar(generic.DeleteView):
      model = Ciudad
      context_object_name = 'Ciudad'
      template_name = 'delete_Ciudad.html'
      form_class = Ciudadform
-     success_url=reverse_lazy("Ciudad:Ciudads")
+     success_url=reverse_lazy("Ciudad:Ciudades")
 # Create your views here.

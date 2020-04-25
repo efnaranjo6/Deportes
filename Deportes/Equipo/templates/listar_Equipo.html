@@ -5,7 +5,7 @@
     <div class="panel-heading">
       <a class="btn btn-outline-primary float-right" href="{% url 'Equipo:Isertar' %}">Agregar</a>
       <h1>
-        Estadio
+        Equipos
       </h1>
 
     </div>
@@ -17,10 +17,9 @@
               <tr>
                   <th class="serial">ID</th>
                     <th>Nombre</th>
-                    <th>Representante</th>
-                    <th>ciudad</th>
-                    <th>email</th>
-                    <th>email</th>
+                     <th>fecha de creacion</th>
+                    <th>Empresa</th>
+                    <th>Ciudad</th>
                   <th>Acciones</th>
               </tr>
           </thead>
@@ -30,10 +29,9 @@
               <tr>
                   <td class="serial"> {{item.id}}</td>
                   <td> <span class="name">{{item.nombre}}</span> </td>
-                  <td>  <span class="count">{{item.ano_creacion}}</span> </td>
+                  <td>  <span class="">{{item.ano_creacion}}</span> </td>
                   <td> <span class="name">{{item.Empresa}}</span> </td>
-                  <td>  <span class="count">{{item.PersonaNatural}}</span> </td>
-                  <td>  <span class="count">{{item.Ciudad}}</span> </td>
+                  <td>  <span class="">{{item.Ciudad}}</span> </td>
                   <td>
                     <div class=" btn-group  dropright pr-3" style="margin-right:20%">
                        <button class="btn btn-danger dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -55,6 +53,7 @@
                   <td></td>
                 </tr>
                 <tr>
+                  <td></td>
                   <td></td>
                   <td></td>
                   <td></td>

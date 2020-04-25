@@ -17,17 +17,17 @@ class Jugadorinsertar(generic.CreateView):
      context_object_name = 'Jugador'
      template_name = 'form_Jugador.html'
      form_class = Jugadorform
-     success_url=reverse_lazy("Jugador:Jugadors")
+     success_url=reverse_lazy("Jugador:Jugadores")
 class Jugadoreditar(generic.UpdateView):
      model = Jugador
      context_object_name = 'Jugador'
      template_name = 'form_Jugador.html'
      form_class = Jugadorform
-     success_url=reverse_lazy("Jugador:Jugadors")
+     success_url=reverse_lazy("Jugador:Jugadores")
 class Jugadoreliminar(generic.DeleteView):
      model = Jugador
      context_object_name = 'Jugador'
      template_name = 'delete_Jugador.html'
      form_class = Jugadorform
-     success_url=reverse_lazy("Jugador:Jugadors")
+     success_url=reverse_lazy("Jugador:Jugadores")
 # Create your views here.

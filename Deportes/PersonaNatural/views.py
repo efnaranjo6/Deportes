@@ -17,17 +17,17 @@ class PersonaNaturalinsertar(generic.CreateView):
      context_object_name = 'PersonaNatural'
      template_name = 'form_PersonaNatural.html'
      form_class = PersonaNaturalform
-     success_url=reverse_lazy("PersonaNatural:PersonaNaturals")
+     success_url=reverse_lazy("PersonaN:PersonaNaturales")
 class PersonaNaturaleditar(generic.UpdateView):
      model = PersonaNatural
      context_object_name = 'PersonaNatural'
      template_name = 'form_PersonaNatural.html'
      form_class = PersonaNaturalform
-     success_url=reverse_lazy("PersonaNatural:PersonaNaturals")
+     success_url=reverse_lazy("PersonaN:PersonaNaturales")
 class PersonaNaturaleliminar(generic.DeleteView):
      model = PersonaNatural
      context_object_name = 'PersonaNatural'
      template_name = 'delete_PersonaNatural.html'
      form_class = PersonaNaturalform
-     success_url=reverse_lazy("PersonaNatural:PersonaNaturals")
+     success_url=reverse_lazy("PersonaN:PersonaNaturales")
 # Create your views here.

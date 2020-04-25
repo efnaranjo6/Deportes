@@ -12,7 +12,7 @@ class Empresa(models.Model):
         return '{}'.format(self.nombre)
     def save(self):
         self.nombre=self.nombre
-        self.Representante= self.Representante
+        self.representante= self.representante
         self.email= self.email
         self.ciudad= self.ciudad
         super(Empresa,self).save()

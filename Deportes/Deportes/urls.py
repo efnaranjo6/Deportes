@@ -33,6 +33,6 @@ urlpatterns = [
     path('Jugador/',include(('Jugador.urls','Jugador'),namespace='Jugador')),
     path('JugadorT/',include(('JugadorTemporada.urls','JugadorTemporada'),namespace='JugadorT')),
     path('Partido/',include(('Partido.urls','Partido'),namespace='Partido')),
-    path('PersonaN/',include(('PersonaNatural.urls','PersonaNatural'),namespace='PersonaN')),
+    path('PersonaN/',include(('PersonaNatural.urls','PersonaN'),namespace='PersonaN')),
 
 ]

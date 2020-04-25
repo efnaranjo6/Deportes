@@ -5,7 +5,7 @@
     <div class="panel-heading">
       <a class="btn btn-outline-primary float-right" href="{% url 'Arbitro:Isertar' %}">Agregar</a>
       <h1>
-        Estadio
+        Arbitro
       </h1>
 
     </div>
@@ -16,28 +16,26 @@
           <thead>
               <tr>
                   <th class="serial">ID</th>
-                    <th>Nombre</th>
-                  <th>Capacidad</th>
-                  <th>Año de constrccion</th>
+                  <th>certificado</th>
+                  <th>nombre</th>
                   <th>Acciones</th>
               </tr>
           </thead>
           {% csrf_token %}
           <tbody>
-              {% for item in Arbitro  %}
+              {% for arb in Arbitro  %}
               <tr>
-                  <td class="serial"> {{item.id}}</td>
-
-                  <td> <span class="name">{{item. certificado}}</span> </td>
-                  <td>  <span class="count">{{item.nombre}}</span> </td>
+                  <td class="serial"> {{arb.id}}</td>
+                  <td> <span class="">{{arb.certificado}}</span> </td>
+                  <td>  <span class="name">{{arb.nombreA}}</span> </td>
                   <td>
                     <div class=" btn-group  dropright pr-3" style="margin-right:20%">
                        <button class="btn btn-danger dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                          Acciones
                        </button>
                        <div class="dropdown-menu p-3" aria-labelledby="dropdownMenuButton">
-                         <a  class="btn btn-outline-danger btn-block " href="{% url 'Arbitro:Eliminar' item.id  %}">eliminar</a>
-                         <a class="btn btn-outline-info  btn-block mt-2 " href="{% url 'Arbitro:Editar' item.id  %}">Editar</a>
+                         <a  class="btn btn-outline-danger btn-block " href="{% url 'Arbitro:Eliminar' arb.id  %}">eliminar</a>
+                         <a class="btn btn-outline-info  btn-block mt-2 " href="{% url 'Arbitro:Editar' arb.id  %}">Editar</a>
                        </div>
                      </div>
                  </td>
@@ -48,14 +46,13 @@
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
                 </tr>
                 <tr>
                   <td></td>
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
+
                 </tr>
           </tbody>
       </table>
