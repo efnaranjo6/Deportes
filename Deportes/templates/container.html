@@ -107,14 +107,14 @@
                           <li><i class="menu-icon fa fa-clipboard"></i><a href="{% url 'Empresa:Empresas' %}">Empresa</a></li>
                           <li><i class="menu-icon fa ti-cup"></i><a href="{% url 'Jugador:Jugadores' %}">Jugador</a></li>
                           <li><i class="menu-icon fa ti-user"></i><a href="{% url 'PersonaN:PersonaNaturales' %}">Personas </a></li>
-                            <li><i class="menu-icon fa ti-user"></i><a href="{% url 'Equipo:Equipos' %}">Equipos </a></li>
+                          <li><i class="menu-icon fa ti-paint-roller"></i><a href="{% url 'Equipo:Equipos' %}">Equipos </a></li>
+                          <li><i class="menu-icon fa ti-target"></i><a href="{% url 'Evento:Eventos' %}">Evento </a></li>
 
                       </ul>
                   </li>
-                   <li class="menu-item-has-children dropdown">
-                      <a href="{% url 'Equipo:Equipos' %}" class="" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon ti-dribbble"><xxx/i>Partidos</a>
-                   </li>
-              </ul>
+                   <li class="menu-item-has-children ">
+                        <a href="{% url 'Partido:Partidos' %}"  aria-haspopup="true" aria-expanded="false"> <i class="menu-icon ti-world"></i>Partidos</a>
+                   </<li>
           </div><!-- /.navbar-collapse -->
       </nav>
   </aside>
